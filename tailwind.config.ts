@@ -34,6 +34,9 @@ const config: Config = {
            "background" : " radial-gradient(circle, rgba(50,115,85,1) 0%, rgba(20,38,32,1) 100%) " 
        
       },
+      fontFamily: {
+        quicksand: ['Quicksand', 'sans-serif'],
+      },
     },
   },
   plugins: [require("daisyui")],
