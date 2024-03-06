@@ -4,7 +4,7 @@ type Props = {}
 
 const Navbar = (props: Props) => {
   return (
-    <div className="navbar py-10 px-5">
+    <div className="navbar py-10 pr-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,15 +22,15 @@ const Navbar = (props: Props) => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1  text-lg">
-        <li className='hover:bg-orange rounded-md'><a>Home</a></li>
-        <li className='hover:bg-orange rounded-md'><a>About</a> </li>
-        <li className='hover:bg-orange rounded-md'><a>Experience</a> </li>
-        <li className='hover:bg-orange rounded-md'><a>Services</a> </li>
-        <li className='hover:bg-orange rounded-md'><a>Testimonials</a></li>
+        <li className='hover:bg-orange rounded-2xl'><a>Home</a></li>
+        <li className='hover:bg-orange rounded-2xl'><a>About</a> </li>
+        <li className='hover:bg-orange rounded-2xl'><a>Experience</a> </li>
+        <li className='hover:bg-orange rounded-2xl'><a>Services</a> </li>
+        <li className='hover:bg-orange rounded-2xl'><a>Testimonials</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn button rounded-2xl  bg-orange border-orange text-white shadow-[2px 2px 14px 14px rgba(50, 115, 85, 0.62)]">Contact</a>
+    <a className="btn button rounded-2xl  bg-orange border-orange text-white px-6 lg:px-10">Contact</a>
   </div>
 </div>
   )
