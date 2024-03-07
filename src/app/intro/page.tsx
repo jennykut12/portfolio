@@ -35,7 +35,7 @@ const Intro = (props: Props) => {
           </a>
         </div>
       </div>
-      <div className=' hidden lg:block -mt-36 relative lg:w-1/2'>
+      <div className=' hidden lg:block -mt-20 relative lg:w-1/2'>
           <Image width={700} height={700} alt='img' src={orangeImg}
             className=' w-[50vw] h-[50vw] absolute'
           />
