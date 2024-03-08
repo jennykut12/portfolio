@@ -39,4 +39,7 @@
   .card{
     background: radial-gradient(circle, rgba(120,128,153,0.19641457680250785) 0%, rgba(221,248,254,0.22149294670846398) 100%);
   }
+  .bgdiv{
+    background-image: url('../../public/wave.svg');
+  }
 }

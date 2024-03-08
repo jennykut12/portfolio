@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={quicksand.className}>
-        <div className="body min-h[100vh] pb-20">
+        <div className="body min-h[100vh] ">
         <Navbar/>
         {children}
         </div>

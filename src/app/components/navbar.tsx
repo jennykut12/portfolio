@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -22,15 +23,15 @@ const Navbar = (props: Props) => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1  text-lg">
-        <li className='hover:text-orange font-semibold rounded-2xl'><a>Home</a></li>
-        <li className='hover:text-orange font-semibold rounded-2xl'><a>About</a> </li>
-        <li className='hover:text-orange font-semibold rounded-2xl'><a>Experience</a> </li>
-        <li className='hover:text-orange font-semibold rounded-2xl'><a>Services</a> </li>
-        <li className='hover:text-orange font-semibold rounded-2xl'><a>Testimonials</a></li>
+        <li className=' active:text-orange hover:text-orange font-semibold rounded-2xl'><Link href='#'>Home</Link></li>
+        <li className='hover:text-orange font-semibold rounded-2xl'><Link href='#intro'>About</Link> </li>
+        <li className='hover:text-orange font-semibold rounded-2xl'><Link href='#work'>Experience</Link> </li>
+        <li className='hover:text-orange font-semibold rounded-2xl'><Link href='#projects'>Services</Link> </li>
+        <li className='hover:text-orange font-semibold rounded-2xl'><Link href='#clients'>Testimonials</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn button rounded-2xl  bg-orange border-orange text-white px-6 lg:px-10">Contact</a>
+    <Link href='#form-contact' className="btn button rounded-2xl  bg-orange border-orange text-white px-6 lg:px-10">Contact</Link>
   </div>
 </div>
   )
