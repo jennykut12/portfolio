@@ -12,7 +12,7 @@ type Props = {}
 
 const Intro = (props: Props) => {
   return (
-    <div className='flex mt-10 px-10 min-h-[100vh]'>
+    <div id='intro' className='flex mt-10 px-10 min-h-[100vh]'>
       <div className='flex flex-col items-center lg:items-start text-center lg:text-start gap-5 lg:w-1/2'>
         <p className='text-4xl lg:text-6xl font-bold '>Hey!!! I Am</p>
         <p className=' text-4xl lg:text-6xl font-bold text-orange '>Jennifer David-Alozie</p>
