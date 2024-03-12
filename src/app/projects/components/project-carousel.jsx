@@ -1,51 +1,19 @@
 import React from "react";
+import { projectData } from "../ui/data/project-data";
 
 const ProjectCarousel = () => {
   return (
     <div className=" max-w-[100vw]">
-      <div className="carousel carousel-center max-w-[70vw] py-20 px-10 space-x-10 bg-lightgreen rounded-box">
-        <div id="slide1" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-            className="rounded-box"
-          />
+      <div className="carousel carousel-center max-w-[100vw] py-20 pl-80 pr-10 space-x-40 bg-white ">
+        {
+          projectData.map((item, i)=>(
+            <div key={i} id={item.id} className="carousel-item flex gap-5 text-center flex-col">
+              <p className=" text-3xl text-black font-semibold">{item.name}</p>
+              <div>{item.img}</div>
+              <p className=" text-black text-lg font-medium">{item.body}</p>
         </div>
-        <div id="slide2" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-            className="rounded-box"
-          />
-        </div>
-        <div id="slide3" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-            className="rounded-box"
-          />
-        </div>
-        <div id="slide4" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-            className="rounded-box"
-          />
-        </div>
-        <div id="slide5" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-            className="rounded-box"
-          />
-        </div>
-        <div id="slide6" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-            className="rounded-box"
-          />
-        </div>
-        <div id="slide7" className="carousel-item">
-          <img
-            src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-            className="rounded-box"
-          />
-        </div>
+          ))
+        }
       </div>
       <div className="flex justify-center w-full py-6 gap-5">
         <a
